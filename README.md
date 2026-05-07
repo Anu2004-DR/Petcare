@@ -106,27 +106,6 @@ app/
 
 ---
 
-# 👨‍💻 Team Details
-
-### Team Leader
-- Anusha D R
-
-### Team Members
-- Add Member Names Here
-
----
-
-# 📷 Screenshots
-
-Add project screenshots here.
-
-Example:
-- Home Screen
-- Adoption Screen
-- Appointment Booking
-- Product Store
-
----
 
 # ✅ Project Status
 
