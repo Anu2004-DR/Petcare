@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Top Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF8DC"
+        android:padding="10dp">
+
+        <!-- Left Side - App Name -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PET PARK"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Right Side - Account Button -->
+        <ImageButton
+            android:onClick="nn"
+            android:id="@+id/accountButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Account"
+        android:scaleType="centerInside" />
+    </RelativeLayout>
+
+    <!-- Below Toolbar - Search Bar -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:hint="Search..."
+        android:padding="10dp" />
+
+    <!-- Scrollable Middle Section -->
+    <ScrollView
+        android:id="@+id/scrollableContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Fragment Container -->
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="400dp" /> <!-- Adjust height as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFF8DC"
+        android:padding="10dp">
+
+        <!-- Home Button -->
+        <LinearLayout
+            android:id="@+id/homeLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_1"
+                android:contentDescription="Home" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Store Button -->
+        <LinearLayout
+            android:id="@+id/StoreLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_2"
+                android:contentDescription="Store" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Adopt Button -->
+        <LinearLayout
+            android:id="@+id/adoptLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_3"
+                android:contentDescription="Adopt" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adopt"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Appointment Button -->
+        <LinearLayout
+            android:id="@+id/appointmentLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_4"
+                android:contentDescription="Appointment" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointment"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
